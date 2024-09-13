@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Riya Bansal V</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Riya Bansal V</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profile.jpg" alt="Riya Bansal V profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Riya Bansal V</h1>
+        <p class="section__text__p2">Undergraduate Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('riyabansalv_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/riya-bansal-bb01b2278/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/riyabansalv'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container1">
+          <img
+            src="about_me_pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="award.jpeg"
+                alt="award icon"
+                class="icon"
+              />
+              <h3>3rd Year Student</h3>
+              <p>Computer Science Engineering</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="calender.jpg"
+                alt="calender event icon"
+                class="icon"
+              />
+              <h3>Conducted</h3>
+              <p>5+ events</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate CSE student actively seeking internships to apply
+              theoretical knowledge practically. Proficient in coding
+              languages with a strong grasp of algorithms. Possessing
+              responsibility and leadership skills, I aim to contribute
+              meaningfully to real-world projects. My outgoing demeanor
+              complements technical prowess, making me an ideal
+              candidate with a relentless drive for success.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="education">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Education</h1>
+      <div class="education-details-container">
+        <div class="education-container">
+          <h2 class="education-sub-title">Vellore Institute Of Technology, Chennai</h2>
+          <p>B.Tech in Computer Science and Engineering (w.spl. in Cyber Physical System)</p>
+          <p>CGPA: 9.02</p>
+          <p>2022-2026</p>
+        </div>
+        <div class="education-container">
+          <h2 class="education-sub-title">Velammal Vidhyashram</h2>
+          <p>12th CBSE Board Exam: 94.6%</p>
+          <p>10th CBSE Board Exam: 95.8%</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Leadership</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TeamWork</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Time Management</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Presentation skills</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section> 
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Student Council Member</h2>
+          <p>Jan 2024</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Programme representative of CSE CPS</h2>
+          <p>Jan 2024</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">IEEE Women In Engineering VITC</h2>
+          <p>Management Co-Lead</p>
+          <p>Jan 2024</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Linux Club VITC</h2>
+          <p>Advisory</p>
+          <p>Sep 2023</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Voice-IT VITC</h2>
+          <p>Hindi RJ Lead</p>
+          <p>Sep 2023</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Girl UP VITC</h2>
+          <p>Operations Department</p>
+          <p>Aug 2023</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">#Include <Her> Cohort 3.0 - DevOps Edition</h2>
+          <p>Azure Developer Community</p>
+        </div>
+        <div class="experience-container">
+          <h2 class="experience-sub-title">Top 15 Finalist in the Bhashini Techathon, sponsored by Google Cloud.</h2>
+          <p>August 2024</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <a href="mailto:riyabansalv05@gmail.com">riyabansalv05@gmail.com</a>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/022/257/067/small/icon-media-social-instagram-free-vector.jpg"
+            alt="Instagram icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.instagram.com/riya_bansal05/">Instagram</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Riya Bansal V. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
